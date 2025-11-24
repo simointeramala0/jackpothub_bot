@@ -9,4 +9,4 @@ bot = telebot.TeleBot(TOKEN)
 def start(message):
     bot.reply_to(message, "Il bot è attivo su Render!")
 
-bot.polling(non_stop=True)
+bot.infinity_polling()
